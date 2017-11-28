@@ -190,7 +190,10 @@ namespace AzureServiceBusMessageReader
             RuleDescription rule = new RuleDescription();
             SqlFilter sqlFilter = new SqlFilter(textBox5.Text); //textBox5.Text = "eventDestination LIKE '%ALCO%'";            
             rule.Filter = sqlFilter;
-            rule.Name = "EventDestination";
+            rule.Name = "$Default";
+
+            //NamespaceManager namespaceManager = NamespaceManager.CreateFromConnectionString(connectionString);
+            //var rules = namespaceManager.GetRules(topicName, subscriptionName);
 
             if (checkBox1.Checked == false)
             {
@@ -198,13 +201,13 @@ namespace AzureServiceBusMessageReader
                 try
                 {
                     subscriptionClient.RemoveRule("$Default");
-                    subscriptionClient.RemoveRule("EventDestination");
+                    //subscriptionClient.RemoveRule("$EventDestination");
                 }
                 catch
                 {
                     //Ignore
                 }
-                subscriptionClient.AddRule("EventDestination", sqlFilter);
+                subscriptionClient.AddRule("$Default", sqlFilter);
             }
             else
             {
