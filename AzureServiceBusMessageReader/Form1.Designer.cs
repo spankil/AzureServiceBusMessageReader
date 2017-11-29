@@ -179,7 +179,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(646, 267);
+            this.checkBox1.Location = new System.Drawing.Point(646, 306);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(118, 24);
             this.checkBox1.TabIndex = 6;
@@ -188,7 +188,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(771, 266);
+            this.button4.Location = new System.Drawing.Point(771, 305);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(55, 24);
             this.button4.TabIndex = 7;
@@ -198,11 +198,11 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(771, 236);
+            this.button5.Location = new System.Drawing.Point(646, 255);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(55, 24);
+            this.button5.Size = new System.Drawing.Size(180, 36);
             this.button5.TabIndex = 7;
-            this.button5.Text = "Send";
+            this.button5.Text = "Send 5 Msgs";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -212,8 +212,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 407);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox3);
@@ -228,6 +226,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.checkBox1);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
