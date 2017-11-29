@@ -17,7 +17,8 @@ namespace AzureServiceBusMessageReader
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new CreateSubscriptions());
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
+            Application.Run(new ApplyRules());
         }
     }
 }

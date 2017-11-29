@@ -60,6 +60,12 @@
     <Compile Include="CreateSubscriptions.Designer.cs">
       <DependentUpon>CreateSubscriptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="ApplyRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplyRules.Designer.cs">
+      <DependentUpon>ApplyRules.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CreateSubscriptions.resx">
       <DependentUpon>CreateSubscriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplyRules.resx">
+      <DependentUpon>ApplyRules.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
