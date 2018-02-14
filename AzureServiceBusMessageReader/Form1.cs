@@ -45,7 +45,7 @@ namespace AzureServiceBusMessageReader
             {
                 Console.WriteLine(threadName + "_" + i++);
 
-                label5.BeginInvoke((Action)delegate ()
+                label5.BeginInvoke((Action)delegate()
                 {
                     label5.Text = threadName + "_" + i++;
                     Application.DoEvents();
@@ -58,8 +58,8 @@ namespace AzureServiceBusMessageReader
                     text += string.Format("{0}\t{1}\n", prop.Key, prop.Value);
                 }
                 WriteToFileThreadSafe(text + "\n", "QueueMessages.txt");
-                msg.Complete();
-            });
+                //msg.Complete();
+            }, new OnMessageOptions() { MaxConcurrentCalls = 20 });
 
             label5.BeginInvoke((Action)delegate ()
             {
